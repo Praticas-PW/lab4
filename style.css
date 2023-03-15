@@ -1,0 +1,10 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+body {background-color: green;} 
+@media (max-width: 600px) {
+body {background-color: blue;}
+}
