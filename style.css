@@ -29,4 +29,6 @@
     top: 75%;
     left: 10%;
     font-size: 80px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
