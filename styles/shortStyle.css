@@ -8,7 +8,7 @@
 /*--------NAVEGATION STUFF--------*/
 .hdr{
     background: lightslategray;
-    color: white;
+    color: black;
     top: 0%;
     position: fixed;
     width: 100%;
@@ -103,6 +103,9 @@ footer {  grid-area: footer;}
   grid-template-columns: 1fr fr 2fr;
   grid-template-rows: 20% 1fr 50px;
 }
+
+
+
 
 .grid-container1 > * {
   background-color: white;
@@ -231,7 +234,7 @@ footer {  grid-area: footer;}
   
     grid-template-columns: 1fr;
     grid-template-rows: 70px 15vh 1fr 20vh 60px;
-  }
+  }spo
   
   .grid-container6 > * {
     background-color: white;
