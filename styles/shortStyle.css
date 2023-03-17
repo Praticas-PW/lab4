@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: xx-large;
+    font-size: large;
     opacity: 0.7;
 }
 
@@ -29,7 +29,7 @@
 
     padding: 20px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: lightgray;
     cursor: pointer;
 }
@@ -45,6 +45,11 @@
 }
 
 
+
+
+
+
+/*------FOOTER STUFF----*/
 
 .Lopes{
     display: flex;
@@ -65,7 +70,7 @@
 
 .text_over_baner{
   color: white;
-  font-size: 80px;
+  font-size: 40px;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 }
@@ -75,48 +80,16 @@
 
 
 
-
-
-
-
-
+/*GREED STUF*/
 
 
 header {  grid-area: header;}
 nav {  grid-area: menu;}
 main {  grid-area: main;}
 aside {  grid-area: right;}
-footer {  grid-area: footer;}
+
 
 .grid-container1 {
-  display: grid;
-  height: 100vh;
-  gap: 10px;
-  padding: 10px;
-  background-color: DodgerBlue;
-
-  grid-template-areas:
-    "header header  header"
-    "main   menu    right"
-    "footer footer  footer";
-
-  grid-template-columns: 1fr fr 2fr;
-  grid-template-rows: 20% 1fr 50px;
-}
-
-
-
-
-.grid-container1 > * {
-  background-color: white;
-  opacity: 0.8;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 4vw;
-}
-
-
-.grid-container2 {
     display: grid;
     height: 100vh;
     gap: 10px;
@@ -124,12 +97,40 @@ footer {  grid-area: footer;}
     background-color: DodgerBlue;
   
     grid-template-areas:
-      "header header  header"
-      "right  main   menu    "
-      "footer footer  footer";
+      "header"
+      "right"
+        "main"
+        "menu";
   
-    grid-template-columns: 10fr 1fr 2fr;
-    grid-template-rows: 10% 10fr 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 15vh 1fr 20vh 60px;
+  }
+  
+  .grid-container1 > * {
+    background-color: white;
+    opacity: 0.8;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 4vw;
+  }
+
+
+
+  .grid-container2 {
+    display: grid;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+    background-color: DodgerBlue;
+  
+    grid-template-areas:
+      "header"
+      "right"
+        "main"
+        "menu";
+  
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 15vh 1fr 20vh 60px;
   }
   
   .grid-container2 > * {
@@ -139,6 +140,7 @@ footer {  grid-area: footer;}
     padding: 10px 0;
     font-size: 4vw;
   }
+
 
 
   .grid-container3 {
@@ -152,8 +154,7 @@ footer {  grid-area: footer;}
       "header"
       "right"
         "main"
-        "menu"
-      "footer";
+        "menu";
   
     grid-template-columns: 1fr;
     grid-template-rows: 70px 15vh 1fr 20vh 60px;
@@ -168,6 +169,8 @@ footer {  grid-area: footer;}
   }
 
 
+
+
   .grid-container4 {
     display: grid;
     height: 100vh;
@@ -176,12 +179,13 @@ footer {  grid-area: footer;}
     background-color: DodgerBlue;
   
     grid-template-areas:
-    "header header  header"
-    "right  main   menu    "
-    "right footer  menu";
-
-  grid-template-columns: 1fr 1fr 2fr;
-  grid-template-rows: 10% 10fr 10px;
+      "header"
+      "right"
+        "main"
+        "menu";
+  
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 15vh 1fr 20vh 60px;
   }
   
   .grid-container4 > * {
@@ -193,6 +197,7 @@ footer {  grid-area: footer;}
   }
 
 
+
   .grid-container5 {
     display: grid;
     height: 100vh;
@@ -201,12 +206,13 @@ footer {  grid-area: footer;}
     background-color: DodgerBlue;
   
     grid-template-areas:
-    "header header  righ"
-    "main  menu   menu    "
-    "right menu  menu";
-
-  grid-template-columns: 1fr 1fr 2fr;
-  grid-template-rows: 10% 10fr 10px;
+      "header"
+      "right"
+        "main"
+        "menu";
+  
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 15vh 1fr 20vh 60px;
   }
   
   .grid-container5 > * {
@@ -217,7 +223,6 @@ footer {  grid-area: footer;}
     font-size: 4vw;
   }
 
-
   .grid-container6 {
     display: grid;
     height: 100vh;
@@ -227,14 +232,13 @@ footer {  grid-area: footer;}
   
     grid-template-areas:
       "header"
-      "menu"
       "right"
         "main"
-      "footer";
+        "menu";
   
     grid-template-columns: 1fr;
     grid-template-rows: 70px 15vh 1fr 20vh 60px;
-  }spo
+  }
   
   .grid-container6 > * {
     background-color: white;
@@ -243,19 +247,3 @@ footer {  grid-area: footer;}
     padding: 10px 0;
     font-size: 4vw;
   }
-
-
-
-
-.menu_grid{
-    color: black;
-    background-color: blueviolet;
-}
-
-.main_grid{
-    background-image: url(images/monuments.webp);
-}
-
-.ad_grid{
-    background-image: url(images/monument3.jpg);
-}

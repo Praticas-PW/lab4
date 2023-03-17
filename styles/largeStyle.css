@@ -73,12 +73,7 @@
 
 
 
-
-
-
-
-
-
+/*GRED STUF*/
 
 
 
@@ -86,7 +81,7 @@ header {  grid-area: header;}
 nav {  grid-area: menu;}
 main {  grid-area: main;}
 aside {  grid-area: right;}
-footer {  grid-area: footer;}
+
 
 .grid-container1 {
   display: grid;
@@ -152,8 +147,7 @@ footer {  grid-area: footer;}
       "header"
       "right"
         "main"
-        "menu"
-      "footer";
+        "menu";
   
     grid-template-columns: 1fr;
     grid-template-rows: 70px 15vh 1fr 20vh 60px;
@@ -259,3 +253,14 @@ footer {  grid-area: footer;}
 .ad_grid{
     background-image: url(images/monument3.jpg);
 }
+
+
+
+
+
+
+
+
+
+
+
