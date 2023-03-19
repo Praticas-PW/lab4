@@ -257,6 +257,19 @@ aside {  grid-area: right;}
 
 
 
+.text_about_berlin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_multimidia{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
 
 
 
